@@ -1,9 +1,9 @@
 <%- title "#{@post.title} | Blog | Artist Name" %>
 
 <div>
-  <h1>Post</h1>
-  <h2><%= @post.title %></h2>
-  <h3><%= @post.author %></h3>
+  <h1><%= @post.title %></h1>
+  <h2><%= @post.author %></h2>
+  <h3><%= @post.created_at.strftime("%b %d, %Y @%H:%M") %></h3>
   <p><%= simple_format @post.body %></p>
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-text="<%= @post.title %>" data-via="Lando726">Tweet</a>
