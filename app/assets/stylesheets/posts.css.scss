@@ -1,3 +1,26 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 10px;
+}
+th {
+  background-color: #666666;
+  color: white;
+}
+td { max-width: 210px }
+.underline { text-decoration: underline }
+span.highlight { background-color: yellow }
+span.strikethrough { text-decoration: line-through }
+.right-cell { text-align: right }
+.key-table {
+  float: right;
+}
+.blog-form {
+  display: inline-block;
+}
