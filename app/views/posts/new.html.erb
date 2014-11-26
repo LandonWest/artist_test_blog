@@ -1,5 +1,134 @@
 <%- title "New Post | Blog | Artist Name" %>
 
-<h1>New Post</h1>
+<div class="blog-form">
+  <h1>New Post</h1>
 
-<%= render 'blog_post_form' %>
+  <%= render 'blog_post_form' %>
+</div>
+
+<div class="key-table">
+  <table>
+    <tr>
+      <th>Effect</th>
+      <th>Markdown</th>
+    </tr>
+    <tr>
+      <td><strong>bold<strong></td>
+      <td>**bold**</td>
+    </tr>
+    <tr>
+      <td><em>italic<em></td>
+      <td>*italic*</td>
+    </tr>
+    <tr>
+      <td class="underline">underline</td>
+      <td>**underline**</td>
+    </tr>
+    <tr>
+      <td><span class="highlight">highlight</span></td>
+      <td>==highlight==</td>
+    </tr>
+    <tr>
+      <td><span class="strikethrough">strikethrough</span></td>
+      <td>~~strikethrough~~</td>
+    </tr>
+    <tr>
+      <td><h1>h1 Headline</h1></td>
+      <td>#h1 Headline#</td>
+    </tr>
+    <tr>
+      <td><h2>h2 Headline</h2></td>
+      <td>##h2 Headline##</td>
+    </tr>
+    <tr>
+      <td><h3>h3 Headline</h3></td>
+      <td>###h3 Headline###</td>
+    </tr>
+    <tr>
+      <td><h4>h4 Headline</h4></td>
+      <td>####h4 Headline####</td>
+    </tr>
+    <!-- <tr>
+      <td><h5>h5 Headline</h5></td>
+      <td>#####h5 Headline#####</td>
+    </tr>
+    <tr>
+      <td><h6>h6 Headline</h6></td>
+      <td>######h6 Headline######</td>
+    </tr> -->
+    <tr>
+      <td>___________ (line break)</td>
+      <td>*** or ___ (3 underscores)</td>
+    </tr>
+    <tr>
+      <td><a href="">Click Me!</a></td>
+      <td>[Click Me!] (http://google.com)</td>
+    </tr>
+    <tr>
+      <td>52<sup>nd</sup></td>
+      <td>52^(nd)</td>
+    </tr>
+    <tr>
+      <td>This is an Ordered List:
+        <ol>
+          <li>
+            First item
+            <ul>
+              <li>first sub-item</li>
+            </ul>
+          </li>
+          <li>Second item</li>
+        </ol>
+      </td>
+      <td>This is an Ordered List:<br><br>1. First item<br>&nbsp;&nbsp;1. first sub-item (lead with 2 empty spaces)<br>2. Second item</td>
+    </tr>
+    <tr>
+      <td>This is an Unordered List:
+        <ul>
+          <li>
+            First item
+            <ul>
+              <li>sub-item</li>
+            </ul>
+          </li>
+          <li>Second item</li>
+        </ul>
+      </td>
+      <td>This is an Unordered List:<br><br>* First item<br>&nbsp;&nbsp;* sub-item (lead with 2 empty spaces)<br>* Second item</td>
+    </tr>
+    <tr>
+      <td>
+        A quote from Vincent van Gogh:
+        <blockquote>I am seeking. I am striving. I am in it with all my heart.</blockquote>
+      </td>
+      <td>A quote from Vincent van Gogh:<br><br>> I am seeking. I am striving. I am in it with all my heart.</td>
+    </tr>
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <th>column 1</th>
+            <th>column 2</th>
+          </tr>
+          <tr>
+            <td>cell</td>
+            <td class="right-cell">cell</td>
+          </tr>
+          <tr>
+            <td>cell</td>
+            <td class="right-cell">cell</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        column 1 | column 2<br>
+        --- | ---:<br>
+        cell | cell<br>
+        cell | cell<br><br>
+        (align cell text right) ---:<br>
+        (align cell text center) :---:
+
+      </td>
+    </tr>
+  </table>
+</div>
