@@ -8,6 +8,7 @@
   <h2><%= post.title %></h2>
   <!-- <h3><%= post.author %></h3> -->
   <h3><i class="fa fa-clock-o"></i>&nbsp;<%= post.created_at.strftime("%b %d, %Y / %I:%M%P") %></h3>
+  <!-- <h3><i class="fa fa-calendar"></i>&nbsp;<%= post.created_at.strftime("%b %d, %Y") %></h3> -->
   <p><%= markdown(truncate(post.body, length: 140, separator: ' ')) %></p>
   <h5>Published <%= time_ago_in_words post.created_at %> ago</h5>
 
