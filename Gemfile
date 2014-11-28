@@ -38,3 +38,4 @@ gem 'spring',        group: :development
 
 gem 'redcarpet'
 gem 'font-awesome-rails'
+gem 'carrierwave'
