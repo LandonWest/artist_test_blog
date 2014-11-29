@@ -4,6 +4,9 @@
   <h1><%= @post.title %></h1>
   <!-- <h2><%= @post.author %></h2> -->
   <h3><i class="fa fa-clock-o"></i>&nbsp;<%= @post.created_at.strftime("%b %d, %Y / %I:%M%P") %></h3>
+  <div>
+    <%= image_tag @post.image %>
+  </div>
   <p><%= markdown(@post.body) %></p>
 
   <!-- Twitter share button -->
