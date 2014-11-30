@@ -13,10 +13,6 @@
 <!-- Form -->
 <div class="blog-form">
   <%= form_for @post do |f| %>
-  <div>
-    <%= f.label :image %><br>
-    <%= f.file_field :image %>
-  </div>
     <div>
       <%= f.label :title %><br>
       <%= f.text_field :title %>
@@ -24,6 +20,10 @@
     <div>
       <%= f.label :author %><br>
       <%= f.text_field :author %>
+    </div>
+    <div>
+      <%= f.label :image %><br>
+      <%= f.file_field :image %>
     </div>
     <div>
       <%= f.label :body %><br>
